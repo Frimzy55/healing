@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/healing/static/css/main.a12bf922.css",
-    "main.js": "/healing/static/js/main.1261cb44.js",
+    "main.js": "/healing/static/js/main.408b1621.js",
     "static/js/453.c2ea0d57.chunk.js": "/healing/static/js/453.c2ea0d57.chunk.js",
     "static/media/img.jpg": "/healing/static/media/img.9c32cc72f865786ada4f.jpg",
     "index.html": "/healing/index.html",
     "main.a12bf922.css.map": "/healing/static/css/main.a12bf922.css.map",
-    "main.1261cb44.js.map": "/healing/static/js/main.1261cb44.js.map",
+    "main.408b1621.js.map": "/healing/static/js/main.408b1621.js.map",
     "453.c2ea0d57.chunk.js.map": "/healing/static/js/453.c2ea0d57.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a12bf922.css",
-    "static/js/main.1261cb44.js"
+    "static/js/main.408b1621.js"
   ]
 }
