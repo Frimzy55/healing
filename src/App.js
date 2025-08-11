@@ -7,11 +7,11 @@ import WelcomePage1 from "./WelcomePage1";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/healing">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/welcome" element={<WelcomePage />} />
-         <Route path="/welcome1" element={<WelcomePage1 />} />
+        <Route path="/welcome1" element={<WelcomePage1 />} />
       </Routes>
     </Router>
   );
