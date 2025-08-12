@@ -12,6 +12,7 @@ export default function App() {
   const [language, setLanguage] = useState("en"); // default language
 
   // Pick translations for current language
+  //hell
   const t = translations[language];
 
   return (
