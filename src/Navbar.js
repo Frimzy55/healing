@@ -227,6 +227,11 @@ export default function Navbar({ language, setLanguage, t }) {
                     </a>
                   </li>
                   <li>
+                    <a href="/services/reiki" className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.reiki}
+                    </a>
+                  </li>
+                  <li>
                     <a href="/services/counseling" className="block px-3 py-2 rounded hover:bg-green-100">
                       {t.counseling}
                     </a>

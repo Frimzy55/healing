@@ -31,6 +31,11 @@ export default function ServicesMenu({ t, openDropdown, setOpenDropdown, onLinkC
             </a>
           </li>
           <li>
+            <a href="/services/reiki" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+              {t.reiki}
+            </a>
+          </li>
+          <li>
             <a href="/services/counseling" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
               {t.counseling}
             </a>

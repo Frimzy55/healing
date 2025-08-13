@@ -6,37 +6,34 @@ export default function Home({ language, t }) {
   return (
     <div>
       {/* Background section with image */}
-    {/* Background section with image */}
-<div
-  className="relative w-full h-[400px] md:h-[500px] bg-center bg-cover flex items-center justify-start px-8"
-  style={{
-    backgroundImage: `url(${imageSrc})`,
-  }}
->
-  {/* Dark overlay for better text visibility */}
-  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div
+        className="relative w-full h-[400px] md:h-[500px] bg-center bg-cover flex items-center justify-start px-8"
+        style={{
+          backgroundImage: `url(${imageSrc})`,
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
-  {/* Text container */}
-  <div className="relative z-10 text-[#6b722cff]">
-    <h2
-      className="text-4xl md:text-9xl font-bold"
-      style={{ fontFamily: "'Freestyle Script', cursive" }}
-    >
-      Serap 
-    </h2>
-    <h2   className="text-4xl md:text-9xl font-medium">With Love</h2>
+        {/* Text container */}
+        <div className="relative z-10 text-[#6b722cff]">
+          <h2
+            className="text-4xl md:text-9xl font-light"
+            style={{ fontFamily: "Breathing" }}
+          >
+            Serap
+          </h2>
 
-    <ul className="list-disc pl-6 mt-3 space-y-1 text-4xl md:text-2xl font-bold">
-      <li>Heal</li>
-      <li>Feel</li>
-      <li>Rise</li>
-    </ul>
+          <h2 className="text-4xl md:text-9xl font-light">with love</h2>
 
-     </div>
-    
-  
-</div>
-
+          {/* Bullet list right under the heading */}
+          <ul className="list-disc list-inside flex space-x-6 mt-3 text-xl md:text-2xl font-bold">
+            <li>heal</li>
+            <li>feel</li>
+            <li>rise</li>
+          </ul>
+        </div>
+      </div>
 
       {/* All text below */}
       <div className="px-6 py-8 max-w-2xl mx-auto text-center">
@@ -63,7 +60,7 @@ export default function Home({ language, t }) {
               ? "You don’t need to “fix” yourself — you need to remember yourself. Through gentle yet profound somatic work, we release old patterns, restore inner safety, and awaken your soul’s truest expression."
               : "Du musst Dich nicht „reparieren“ — Du musst Dich an Dich erinnern. Durch sanfte und zugleich tiefgehende somatische Arbeit lösen wir alte Muster, stellen innere Sicherheit wieder her und erwecken den wahrsten Ausdruck Deiner Seele."}
           </p>
-          <button className="bg-red-800 text-white px-6 py-3 rounded-full shadow-lg hover:bg-red-700 transition duration-200 flex items-center gap-2">
+          <button className="bg-green-800 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-700 transition duration-200 flex items-center gap-2">
             📩{" "}
             {language === "en"
               ? "The perfect match , let’s work together"
