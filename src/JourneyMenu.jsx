@@ -14,7 +14,7 @@ export default function JourneyMenu({ t, openDropdown, setOpenDropdown, onLinkCl
         {t.journey}
       </button>
       {openDropdown === "journey" && (
-        <ul className="absolute top-full left-0 bg-[#13a061ff] shadow-lg rounded-lg py-2 w-64">
+        <ul className="absolute top-full left-0 bg-[#6b722cff] shadow-lg rounded-lg py-2 w-64">
           <li>
             <a href="/journey/soundslikeyou" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
               {t.soundslikeyou}
