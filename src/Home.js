@@ -1,37 +1,47 @@
 import React from "react";
 
 export default function Home({ language, t }) {
-  const imageSrc = require("./assets/serap1.jpeg");
+  const desktopImage = require("./assets/serap.jpeg");
+  const mobileImage = require("./assets/serap.jpeg"); // New mobile image
 
   return (
     <div>
       {/* Background section with image */}
+      {/* Mobile view */}
+      
+<div
+  className="relative w-full h-[200px] bg-center bg-contain bg-no-repeat flex items-center justify-start px-8 md:hidden"
+  style={{
+    backgroundImage: `url(${mobileImage})`,
+    backgroundColor: "#dfd9d4ff", // optional background behind image
+  }}
+>
+  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+  <div className="relative z-10 text-[#114e11ff]">
+    <h2
+      className="text-4xl font-light"
+      style={{ fontFamily: "Breathing" }}
+    >
+      {/* Mobile heading */}
+    </h2>
+  </div>
+</div>
+
+      {/* Desktop view */}
       <div
-        className="relative w-full h-[400px] md:h-[500px] bg-center bg-cover flex items-center justify-start px-8"
+        className="relative w-full h-[500px] bg-center bg-cover flex items-center justify-start px-8 hidden md:flex"
         style={{
-          backgroundImage: `url(${imageSrc})`,
+          backgroundImage: `url(${desktopImage})`,
         }}
       >
-        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-
-        {/* Text container */}
-        <div className="relative z-10 text-[#6b722cff]">
+        <div className="relative z-10 text-[#114e11ff]">
           <h2
-            className="text-4xl md:text-9xl font-light"
+            className="text-9xl font-light"
             style={{ fontFamily: "Breathing" }}
           >
-            Serap
+            {/* Desktop heading */}
           </h2>
-
-          <h2 className="text-4xl md:text-9xl font-light">with love</h2>
-
-          {/* Bullet list right under the heading */}
-          <ul className="list-disc list-inside flex space-x-6 mt-3 text-xl md:text-2xl font-bold">
-            <li>heal</li>
-            <li>feel</li>
-            <li>rise</li>
-          </ul>
         </div>
       </div>
 

@@ -20,7 +20,7 @@ export default function Navbar({ language, setLanguage, t }) {
   const handleLinkClick = () => setIsOpen(false);
 
   return (
-    <nav className="bg-[#6b722cff] text-[#b7cfb2ff] px-6 py-1 fixed top-0 left-0 w-full z-50 shadow-md">
+    <nav className="bg-[#856a55ff] text-[#b7cfb2ff] px-6 py-1 fixed top-0 left-0 w-full z-50 shadow-md">
 
 
       <div className="flex items-center justify-between">
@@ -134,7 +134,7 @@ export default function Navbar({ language, setLanguage, t }) {
               <a
                 href="/"
                 onClick={handleLinkClick}
-                className="block py-3 px-4 bg-[#6b722cff] rounded-lg hover:bg-green-200"
+                className="block py-3 px-4 bg-[#856a55ff] rounded-lg hover:bg-green-200"
               >
                 {t.home}
               </a>
@@ -180,7 +180,7 @@ export default function Navbar({ language, setLanguage, t }) {
                 {openSubmenu === "journey" ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
               </button>
               {openSubmenu === "journey" && (
-                <ul className="mt-2 space-y-2 bg-[#6b722cff] p-2 rounded-lg">
+                <ul className="mt-2 space-y-2 bg-[#856a55ff] p-2 rounded-lg">
                   <li>
                     <a href="/journey/soundslikeyou" className="block px-3 py-2 rounded hover:bg-green-100">
                       {t.soundslikeyou}
@@ -210,7 +210,7 @@ export default function Navbar({ language, setLanguage, t }) {
                 {openSubmenu === "services" ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
               </button>
               {openSubmenu === "services" && (
-                <ul className="mt-2 space-y-2 bg-[#6b722cff] p-2 rounded-lg">
+                <ul className="mt-2 space-y-2 bg-[#856a55ff] p-2 rounded-lg">
                   <li>
                     <a href="/services/mentoring" className="block px-3 py-2 rounded hover:bg-green-100">
                       {t.mentoring}
@@ -250,7 +250,7 @@ export default function Navbar({ language, setLanguage, t }) {
                 {openSubmenu === "contact" ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
               </button>
               {openSubmenu === "contact" && (
-                <ul className="mt-2 space-y-2 bg-[#6b722cff] p-2 rounded-lg">
+                <ul className="mt-2 space-y-2 bg-[#856a55ff] p-2 rounded-lg">
                   <li>
                     <a href="/contact/book" className="block px-3 py-2 rounded hover:bg-green-100">
                       {t.book}

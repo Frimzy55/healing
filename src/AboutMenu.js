@@ -14,7 +14,7 @@ export default function AboutMenu({ t, openDropdown, setOpenDropdown, onLinkClic
         {t.about}
       </button>
       {openDropdown === "about" && (
-        <ul className="absolute top-full left-0 bg-[#6b722cff] shadow-lg rounded-lg py-2 w-56">
+        <ul className="absolute top-full left-0 bg-[#856a55ff] shadow-lg rounded-lg py-2 w-56">
           <li>
             <a href="/about/meet" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
               {t.meet}

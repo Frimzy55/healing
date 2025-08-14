@@ -14,7 +14,7 @@ export default function ContactMenu({ t, openDropdown, setOpenDropdown, onLinkCl
         {t.contact}
       </button>
       {openDropdown === "contact" && (
-        <ul className="absolute top-full left-0 bg-[#6b722cff] shadow-lg rounded-lg py-2 w-56">
+        <ul className="absolute top-full left-0 bg-[#856a55ff] shadow-lg rounded-lg py-2 w-56">
           <li>
             <a href="/contact/book" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
               {t.book}

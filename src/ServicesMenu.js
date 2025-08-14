@@ -14,7 +14,7 @@ export default function ServicesMenu({ t, openDropdown, setOpenDropdown, onLinkC
         {t.work}
       </button>
       {openDropdown === "services" && (
-        <ul className="absolute top-full left-0 bg-[#6b722cff] shadow-lg rounded-lg py-2 w-72">
+        <ul className="absolute top-full left-0 bg-[#856a55ff] shadow-lg rounded-lg py-2 w-72">
           <li>
             <a href="/services/mentoring" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
               {t.mentoring}
