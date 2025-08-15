@@ -16,27 +16,27 @@ export default function ServicesMenu({ t, openDropdown, setOpenDropdown, onLinkC
       {openDropdown === "services" && (
         <ul className="absolute top-full left-0 bg-[#856a55ff] shadow-lg rounded-lg py-2 w-72">
           <li>
-            <a href="/services/mentoring" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/services/mentoring" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.mentoring}
             </a>
           </li>
           <li>
-            <a href="/services/deepdive" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/services/deepdive" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.deepdive}
             </a>
           </li>
           <li>
-            <a href="/services/kennenlern" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/services/kennenlern" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.kennenlern}
             </a>
           </li>
           <li>
-            <a href="/services/reiki" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/services/reiki" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.reiki}
             </a>
           </li>
           <li>
-            <a href="/services/counseling" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/services/counseling" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.counseling}
             </a>
           </li>

@@ -16,17 +16,17 @@ export default function AboutMenu({ t, openDropdown, setOpenDropdown, onLinkClic
       {openDropdown === "about" && (
         <ul className="absolute top-full left-0 bg-[#856a55ff] shadow-lg rounded-lg py-2 w-56">
           <li>
-            <a href="/about/meet" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/about/meet" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.meet}
             </a>
           </li>
           <li>
-            <a href="/about/promise" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/about/promise" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.promise}
             </a>
           </li>
           <li>
-            <a href="/about/specialized" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/about/specialized" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.specialized}
             </a>
           </li>

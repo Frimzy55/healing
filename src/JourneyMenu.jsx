@@ -16,17 +16,17 @@ export default function JourneyMenu({ t, openDropdown, setOpenDropdown, onLinkCl
       {openDropdown === "journey" && (
         <ul className="absolute top-full left-0 bg-[#856a55ff] shadow-lg rounded-lg py-2 w-64">
           <li>
-            <a href="/journey/soundslikeyou" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/journey/soundslikeyou" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.soundslikeyou}
             </a>
           </li>
           <li>
-            <a href="/journey/possible" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/journey/possible" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.possible}
             </a>
           </li>
           <li>
-            <a href="/journey/method" onClick={onLinkClick} className="block px-4 py-2 hover:bg-green-900 rounded-md">
+            <a href="/journey/method" onClick={onLinkClick} className="block px-4 py-2 hover:bg-[#eebd98ff] rounded-md">
               {t.method}
             </a>
           </li>
