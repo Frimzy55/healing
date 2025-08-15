@@ -20,7 +20,7 @@ export default function Navbar({ language, setLanguage, t }) {
   const handleLinkClick = () => setIsOpen(false);
 
   return (
-    <nav className="bg-[#856a55ff] text-[#b7cfb2ff] px-8 py-4 fixed top-0 left-0 w-full z-50 shadow-lg">
+    <nav className="bg-[#856a55ff] text-white px-8 py-4 fixed top-0 left-0 w-full z-50 shadow-lg">
       <div className="flex items-center justify-between max-w-7xl mx-auto w-full">
 
         {/* Logo / Title */}
