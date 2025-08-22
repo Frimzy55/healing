@@ -13,7 +13,7 @@ const translations = {
     possible: "What Becomes Possible for You",
     method: "My Method",
     mentoring: " ꩜ 1:1 Mentoring-Embodied Light",
-    deepdive: " ꩜ 7 days Deep Dive ",
+    deepdive: " ꩜ Energy Healing ",
     kennenlern: "꩜ Meet 1:1 EFT August Special",
     reiki: "꩜ Reiki with a soul reading",
     counseling: "꩜ Psychological Counseling",

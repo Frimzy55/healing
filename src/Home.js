@@ -1,7 +1,9 @@
 // src/Home.js
 import React from "react";
+import { motion } from "framer-motion"; // 👈 animation
 import YogaSection from "./YogaSection";
 import OfferingsSection from "./OfferingsSection";
+import storyImage from "./assets/img.jpg"; // 👈 your side image
 
 export default function Home({ language, t }) {
   const desktopImage = require("./assets/serap.jpeg");
@@ -49,7 +51,7 @@ export default function Home({ language, t }) {
       </div>
 
       {/* All text below */}
-      <div className="px-6 py-8 max-w-2xl mx-auto text-center">
+      <div className="px-6 py-8 max-w-5xl mx-auto text-center">
         {/* Welcome text */}
         <h1 className="text-4xl font-bold text-[#cea07eff] mb-4">
           {t.welcomeTitle}
@@ -58,29 +60,53 @@ export default function Home({ language, t }) {
           {t.welcomeText}
         </p>
 
-        {/* Healing intro block */}
-        <div className="mb-10 text-gray-800 space-y-4">
-          <h2 className="text-3xl font-bold text-[#cea07eff]">
-            Heal • Rise • Shine
-          </h2>
-          <p className="text-xl font-medium">
-            Nervous System &amp; Soul Healing
-          </p>
-          <p className="mb-12 text-gray-800 space-y-4 text-left">
-            You’ve been carrying so much. Always showing up. Always giving.
-            Always holding it together. But deep inside, you know: this can’t be
-            all there is.
-          </p>
-          <p className="mb-12 text-gray-800 space-y-4 text-left">
-            Here, you are invited to pause. To exhale. To feel your body soften
-            and your soul expand.
-          </p>
-          <p className="mb-12 text-gray-800 space-y-4 text-left">
-            <span className="font-semibold">Serap with Love</span> is more than
-            a practice – it’s a sanctuary. A place where healing becomes simple,
-            where your nervous system can unwind, and where you are reminded of
-            the truth: you are not broken. You are whole.
-          </p>
+        {/* Healing intro block with side-by-side layout */}
+        <div className="mb-16 flex flex-col md:flex-row items-center md:items-start gap-8 text-gray-800">
+          {/* Left: Animated Image */}
+          <div className="flex-shrink-0 md:w-1/2 flex justify-center">
+           <motion.img
+  src={storyImage}
+  alt="Healing journey"
+  className="rounded-2xl shadow-lg w-full max-w-md h-80 object-cover"
+  animate={{
+    scale: [1, 1.05, 1],   // zoom in and back
+    opacity: [1, 0.9, 1],  // subtle fade
+    x: [0, -10, 0, 10, 0], // slight side-to-side pan
+  }}
+  transition={{
+    duration: 12,   // slideshow "cycle" duration
+    repeat: Infinity, // loop forever
+    ease: "easeInOut",
+  }}
+/>
+
+
+          </div>
+
+          {/* Right: Text */}
+          <div className="space-y-4 md:w-1/2 text-left">
+            <h2 className="text-3xl font-bold text-[#cea07eff]">
+              Heal • Rise • Shine
+            </h2>
+            <p className="text-xl font-medium">
+              Nervous System &amp; Soul Healing
+            </p>
+            <p>
+              You’ve been carrying so much. Always showing up. Always giving.
+              Always holding it together. But deep inside, you know: this can’t
+              be all there is.
+            </p>
+            <p>
+              Here, you are invited to pause. To exhale. To feel your body
+              soften and your soul expand.
+            </p>
+            <p>
+              <span className="font-semibold">Serap with Love</span> is more
+              than a practice – it’s a sanctuary. A place where healing becomes
+              simple, where your nervous system can unwind, and where you are
+              reminded of the truth: you are not broken. You are whole.
+            </p>
+          </div>
         </div>
 
         {/* Personal Story Block */}
