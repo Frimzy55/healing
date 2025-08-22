@@ -4,7 +4,7 @@ const translations = {
     home: "Home",
     about: "About",
     journey: "Your Journey",
-    work: "Work With Me",
+    work: "Offerings",
     contact: "Contact / Book",
     meet: "Meet Serap",
     promise: "My Promise",
@@ -19,9 +19,9 @@ const translations = {
     counseling: "꩜ Psychological Counseling",
     book: "Book Your Call",
     
-    welcomeTitle: "Welcome to Serap with Love",
+    welcomeTitle: "",
     welcomeText:
-      "I’m so glad you’re here. This space is dedicated to your growth, healing, and empowerment. Explore my services, dive into your personal journey, and discover how we can work together to help you thrive.",
+      "",
   },
   de: {
     home: "Startseite",

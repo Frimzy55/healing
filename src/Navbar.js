@@ -28,7 +28,7 @@ export default function Navbar({ language, setLanguage, t }) {
           className="text-3xl md:text-4xl font-bold tracking-wide"
           style={{ fontFamily: "Castella" }}
         >
-          MyBrand
+          {/* Logo or title here */}
         </div>
 
         {/* Language Switch (Desktop) */}
@@ -125,13 +125,13 @@ export default function Navbar({ language, setLanguage, t }) {
           <ul className="flex flex-col space-y-4 text-lg">
             {/* Home */}
             <li>
-              <a
-                href="/"
+              <Link
+                to="/"
                 onClick={handleLinkClick}
                 className="block py-4 px-5 bg-[#856a55ff] rounded-lg hover:bg-green-200"
               >
                 {t.home}
-              </a>
+              </Link>
             </li>
 
             {/* About Dropdown */}
@@ -164,106 +164,100 @@ export default function Navbar({ language, setLanguage, t }) {
               )}
             </li>
 
-            {/* Repeat similar pattern for Journey, Services, Contact */}
-            {/* ... keep your existing structure, just add py-4 px-5 for bigger spacing */}
-             {/* Repeat same pattern for Journey */}
-                        <li>
-                          <button
-                            className="flex justify-between w-full py-3 px-4 bg-[#eebd98ff] rounded-lg font-semibold hover:bg-green-200"
-                            onClick={() => toggleMobileSubmenu("journey")}
-                          >
-                            {t.journey}
-                            {openSubmenu === "journey" ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                          </button>
-                          {openSubmenu === "journey" && (
-                            <ul className="mt-2 space-y-2 bg-[#856a55ff] p-2 rounded-lg">
-                              <li>
-                                <a href="/journey/soundslikeyou" className="block px-3 py-2 rounded hover:bg-green-100">
-                                  {t.soundslikeyou}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="/journey/possible" className="block px-3 py-2 rounded hover:bg-green-100">
-                                  {t.possible}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="/journey/method" className="block px-3 py-2 rounded hover:bg-green-100">
-                                  {t.method}
-                                </a>
-                              </li>
-                            </ul>
-                          )}
-                        </li>
+            {/* Journey Dropdown */}
+            <li>
+              <button
+                className="flex justify-between w-full py-3 px-4 bg-[#eebd98ff] rounded-lg font-semibold hover:bg-green-200"
+                onClick={() => toggleMobileSubmenu("journey")}
+              >
+                {t.journey}
+                {openSubmenu === "journey" ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+              </button>
+              {openSubmenu === "journey" && (
+                <ul className="mt-2 space-y-2 bg-[#856a55ff] p-2 rounded-lg">
+                  <li>
+                    <Link to="/journey/soundslikeyou" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.soundslikeyou}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/journey/possible" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.possible}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/journey/method" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.method}
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
 
-                         {/* Services */}
-                                    <li>
-                                      <button
-                                        className="flex justify-between w-full py-3 px-4 bg-[#eebd98ff] rounded-lg font-semibold hover:bg-green-200"
-                                        onClick={() => toggleMobileSubmenu("services")}
-                                      >
-                                        {t.work}
-                                        {openSubmenu === "services" ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                                      </button>
-                                      {openSubmenu === "services" && (
-                                        <ul className="mt-2 space-y-2 bg-[#856a55ff] p-2 rounded-lg">
-                                          <li>
-                                            <a href="/services/mentoring" className="block px-3 py-2 rounded hover:bg-green-100">
-                                              {t.mentoring}
-                                            </a>
-                                          </li>
-                                          <li>
-                                            <a href="/services/deepdive" className="block px-3 py-2 rounded hover:bg-green-100">
-                                              {t.deepdive}
-                                            </a>
-                                          </li>
-                                          <li>
-                                            <a href="/services/kennenlern" className="block px-3 py-2 rounded hover:bg-green-100">
-                                              {t.kennenlern}
-                                            </a>
-                                          </li>
-                                          <li>
-                                            <a href="/services/reiki" className="block px-3 py-2 rounded hover:bg-green-100">
-                                              {t.reiki}
-                                            </a>
-                                          </li>
-                                          <li>
-                                            <a href="/services/counseling" className="block px-3 py-2 rounded hover:bg-green-100">
-                                              {t.counseling}
-                                            </a>
-                                          </li>
-                                        </ul>
-                                      )}
-                                    </li>
+            {/* Services Dropdown */}
+            <li>
+              <button
+                className="flex justify-between w-full py-3 px-4 bg-[#eebd98ff] rounded-lg font-semibold hover:bg-green-200"
+                onClick={() => toggleMobileSubmenu("services")}
+              >
+                {t.work}
+                {openSubmenu === "services" ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+              </button>
+              {openSubmenu === "services" && (
+                <ul className="mt-2 space-y-2 bg-[#856a55ff] p-2 rounded-lg">
+                  <li>
+                    <Link to="/services/mentoring" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.mentoring}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/deepdive" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.deepdive}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/kennenlern" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.kennenlern}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/reiki" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.reiki}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/counseling" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.counseling}
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
 
-
-
-                      <li>
-                                    <button
-                                      className="flex justify-between w-full py-3 px-4 bg-[#eebd98ff] rounded-lg font-semibold hover:bg-green-200"
-                                      onClick={() => toggleMobileSubmenu("contact")}
-                                    >
-                                      {t.contact}
-                                      {openSubmenu === "contact" ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                                    </button>
-                                    {openSubmenu === "contact" && (
-                                      <ul className="mt-2 space-y-2 bg-[#856a55ff] p-2 rounded-lg">
-                                        <li>
-                                          <a href="/contact/book" className="block px-3 py-2 rounded hover:bg-green-100">
-                                            {t.book}
-                                          </a>
-                                        </li>
-                                        <li>
-                                          <a href="/contact/dm" className="block px-3 py-2 rounded hover:bg-green-100">
-                                            {t.dm}
-                                          </a>
-                                        </li>
-                                      </ul>
-                                    )}
-                                  </li>
-
-            
-
+            {/* Contact Dropdown */}
+            <li>
+              <button
+                className="flex justify-between w-full py-3 px-4 bg-[#eebd98ff] rounded-lg font-semibold hover:bg-green-200"
+                onClick={() => toggleMobileSubmenu("contact")}
+              >
+                {t.contact}
+                {openSubmenu === "contact" ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+              </button>
+              {openSubmenu === "contact" && (
+                <ul className="mt-2 space-y-2 bg-[#856a55ff] p-2 rounded-lg">
+                  <li>
+                    <Link to="/contact/book" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.book}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact/dm" onClick={handleLinkClick} className="block px-3 py-2 rounded hover:bg-green-100">
+                      {t.dm}
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
           </ul>
         </div>
       )}

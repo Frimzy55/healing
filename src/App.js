@@ -7,6 +7,8 @@ import Meet from "./Meet";
 import Promise from "./Promise";
 import Specialized from "./Specialized";
 import translations from "./translations";
+import JourneySoundsLikeYou from "./JourneySoundsLikeYou";
+import Reiki from "./Reiki";
 
 export default function App() {
   const [language, setLanguage] = useState("en"); // default language
@@ -28,6 +30,9 @@ export default function App() {
         <Route path="/about/meet" element={<Meet language={language} t={t} />} />
         <Route path="/about/promise" element={<Promise language={language} t={t} />} />
         <Route path="/about/specialized" element={<Specialized language={language} t={t} />} />
+
+          <Route path="/journey/soundslikeyou" element={<JourneySoundsLikeYou language={language} t={t} />} />
+           <Route path="/services/reiki" element={<Reiki language={language} t={t} />} />
 
         {/* Catch-all: redirect unknown routes to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
