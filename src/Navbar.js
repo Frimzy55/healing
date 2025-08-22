@@ -41,7 +41,7 @@ export default function Navbar({ language, setLanguage, t }) {
                 : "bg-transparent text-green-900"
             }`}
           >
-            ENGLISH
+            ENGLISH🌿
           </button>
           <button
             onClick={() => setLanguage("de")}
@@ -51,7 +51,7 @@ export default function Navbar({ language, setLanguage, t }) {
                 : "bg-transparent text-green-900"
             }`}
           >
-            GERMAN
+            GERMAN🌿
           </button>
         </div>
 

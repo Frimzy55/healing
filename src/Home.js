@@ -4,6 +4,9 @@ import { motion } from "framer-motion"; // 👈 animation
 import YogaSection from "./YogaSection";
 import OfferingsSection from "./OfferingsSection";
 import storyImage from "./assets/img.jpg"; // 👈 your side image
+import LetsWorkTogether from "./LetsWorkTogether";
+import WhatBecomesPossible from "./WhatBecomesPossible";
+//importScripts WhatBecomesPossible
 
 export default function Home({ language, t }) {
   const desktopImage = require("./assets/serap.jpeg");
@@ -139,7 +142,9 @@ export default function Home({ language, t }) {
         {/* Import Yoga and Offerings */}
         <YogaSection />
         <OfferingsSection />
-
+        <LetsWorkTogether/>
+        <WhatBecomesPossible/>
+        
         {/* Placeholder for "Come Home to Yourself card" or more content */}
       </div>
     </div>
