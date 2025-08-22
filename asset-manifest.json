@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/healing/static/css/main.1a34acbc.css",
-    "main.js": "/healing/static/js/main.a44b2456.js",
+    "main.css": "/healing/static/css/main.9333c5ef.css",
+    "main.js": "/healing/static/js/main.87069560.js",
     "static/js/453.c2ea0d57.chunk.js": "/healing/static/js/453.c2ea0d57.chunk.js",
     "static/media/img.jpg": "/healing/static/media/img.9c32cc72f865786ada4f.jpg",
     "static/media/serap.jpeg": "/healing/static/media/serap.9be6af6fc9990b9d856e.jpeg",
     "index.html": "/healing/index.html",
-    "main.1a34acbc.css.map": "/healing/static/css/main.1a34acbc.css.map",
-    "main.a44b2456.js.map": "/healing/static/js/main.a44b2456.js.map",
+    "main.9333c5ef.css.map": "/healing/static/css/main.9333c5ef.css.map",
+    "main.87069560.js.map": "/healing/static/js/main.87069560.js.map",
     "453.c2ea0d57.chunk.js.map": "/healing/static/js/453.c2ea0d57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a34acbc.css",
-    "static/js/main.a44b2456.js"
+    "static/css/main.9333c5ef.css",
+    "static/js/main.87069560.js"
   ]
 }
